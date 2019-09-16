@@ -1,0 +1,57 @@
+[
+    {
+      "Biography": [
+        {
+          "surname": "Orji", 
+          "firstname": "Kelvin",
+          "othername": "Kalu",
+          "gender": "Male",
+          "age": 27, 
+          "marital status": "single",
+          "nationality": "Nigerian"
+        }
+
+      ]
+    }, 
+    {
+      "Contact": [
+        {
+          "email": "orjikalukelvin@gmail.com", 
+          "phone": "+2340165015861", 
+          "github": "https://github.com/ORJIKALU/"
+        }
+      ]
+    }, 
+    {
+      "Skills": [
+        {
+          "python": "pro", 
+          "aws": "pro", 
+          "javascript": "pro", 
+          "c": "Pro",
+          "java": "pro", 
+          "php": "pro", 
+          "git": "pro", 
+          "communication": "Pro"
+
+        }
+      ]
+    },
+    {
+        "Education": [
+          {
+            "mechanical engineering": "Beng", 
+            "react native": "professional certificate", 
+            "google digital skills": "professional certificate" 
+          }
+        ]
+      },
+      {
+        "Others": [
+          {
+            "hobbies": "reading, coding", 
+            "interest": "edtech,  politics"
+          }
+        ]
+      }
+  ]
