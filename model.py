@@ -66,4 +66,25 @@ class Tags(db.Model):
     def __repr__(self):
         return '<Tags %r>' % self.key
 
-        
+       
+  #for formatting object as json
+class ItemSchema(ma.ModelSchema):
+    class Meta:
+        fields = ("id", "title","rank","category_name","description", "date_created")
+        Model = Item 
+
+class CategorySchema(ma.ModelSchema):
+    class Meta:
+        fields = ("id", "name", "date_created")
+        Model = Category 
+
+class LogsSchema(ma.ModelSchema):
+    class Meta:
+        fields = ("id", "title","category","description", "date_created", "action")
+        Model = Logs 
+
+class TagsSchema(ma.ModelSchema):
+    class Meta:
+        fields = ("id", "key","value","item_id")
+        Model = Tags 
+
