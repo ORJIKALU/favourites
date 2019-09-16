@@ -4,6 +4,8 @@ from datetime import datetime
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 app = Flask(__name__)
+from flask_sqlalchemy import SQLAlchemy
+from flask_marshmallow import Marshmallow
 
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///favourites.db'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://admin:venuse123@database-1.clcrnnlay3xc.us-west-2.rds.amazonaws.com/vinkela'
@@ -13,6 +15,7 @@ engine = create_engine('sqlite://', echo=False)
 Base = declarative_base()
 
 db = SQLAlchemy(app)
+ma = Marshmallow(app)
 
 
 
@@ -66,8 +69,8 @@ class Tags(db.Model):
     def __repr__(self):
         return '<Tags %r>' % self.key
 
-       
-  #for formatting object as json
+        
+#for formatting object as json
 class ItemSchema(ma.ModelSchema):
     class Meta:
         fields = ("id", "title","rank","category_name","description", "date_created")
