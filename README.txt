@@ -4,7 +4,7 @@ My implementation makes uses of Flask framework for the APP and the API
 
 The database is Aws MySql with Sqlalchemy as the interface
 
-The APP is hosted using AWS elastic Beanstalk and can be accessed via the url  Bad-env.mf3vq7swip.us-west-2.elasticbeanstalk.com
+The APP is hosted using AWS elastic Beanstalk and can be accessed via the url  www.Bad-env.mf3vq7swip.us-west-2.elasticbeanstalk.com
 
 To test API, make sure all the dependencies in requirement.txt is installed in the environment. Then call python with
 "python api.py"
